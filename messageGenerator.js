@@ -1,7 +1,10 @@
-function friendlyGreeting(arr, arr, arr) {
-const messPart1 = ['Greetings', 'Hello', 'Well Met', 'Hail', 'Salutations'];
-const messPart2 = ['Adventurer', 'Traveler', 'Friend', 'Hero', 'Warrior'];
-const messPart3 = ['How do you fare?', 'Good to see you.', 'Are you well?', 'Do you need anything?', 'How can I be of assistance?'];
-let greeting = (messPart1[Math.floor(Math.random() * messPart1.length)]) + ',' + (messPart2[Math.floor(Math.random() * messPart2.length)]) + '.' + (messPart3[Math.floor(Math.random() * messPart3.length)]);
+const mess1 = ['Greetings', 'Hello', 'Well Met', 'Hail', 'Salutations'];
+const mess2 = ['Adventurer', 'Traveler', 'Friend', 'Hero', 'Warrior'];
+const mess3 = ['How do you fare?', 'Good to see you.', 'Are you well?', 'Do you need anything?', 'How can I be of assistance?'];
+
+function friendlyGreeting(arr1, arr2, arr3) {
+let greeting = (arr1[Math.floor(Math.random() * arr1.length)]) + ',' + (arr2[Math.floor(Math.random() * arr2.length)]) + '.' + (arr3[Math.floor(Math.random() * arr3.length)]);
 alert(greeting);
 }
+
+friendlyGreeting(mess1, mess2, mess3)
